@@ -8,24 +8,30 @@ import (
 
 var tmpl *template.Template
 
-type Todo struct {
-	Item string
-	Done bool
+type Quiz struct {
+	Question string
+	Answered bool
 }
 
 type PageData struct {
 	Title string
-	Todos []Todo
+	Quiz  []Quiz
 }
 
-func todo(w http.ResponseWriter, r *http.Request) {
+func quiz(w http.ResponseWriter, r *http.Request) {
 
-	data := PageData {
+	data := PageData{
 		Title: "GoLang Quiz",
-		Todos: []Todo{
-			{Item: "Install GO", Done: true},
-			{Item: "Learn Go", Done: false},
-			{Item: "Like this video", Done: false},
+		Quiz: []Quiz{
+			{Question: "What do whales breathe out of?", Answered: true},
+			{Question: "How do whales regulate/create heat?", Answered: false},
+			{Question: "Dolphins are very _________ animals and hunt in pods.", Answered: false},
+			{Question: "A blue whale is the largest mammal in the ocean.", Answered: false},
+			{Question: "A Bryde’s Whales’ diet consists of _____ .", Answered: false},
+			{Question: "Humpback whales swim to which coast to have their babies?", Answered: true},
+			{Question: "Bottle-nose dolphins are known for _______ .", Answered: true},
+			{Question: "WHich dolphin spins in the air?", Answered: true},
+			{Question: "What do whales breathe out of?", Answered: true},
 		},
 	}
 
@@ -33,15 +39,13 @@ func todo(w http.ResponseWriter, r *http.Request) {
 
 }
 
-
 func main() {
 	mux := http.NewServeMux()
 	tmpl = template.Must(template.ParseFiles("templates/index.gohtml"))
 
 	fs := http.FileServer(http.Dir("./static"))
 	mux.Handle("/static/", http.StripPrefix("/static/", fs))
-	mux.HandleFunc("/todo", todo)
-	
+	mux.HandleFunc("/quiz", quiz)
+
 	log.Fatal(http.ListenAndServe(":9091", mux))
 }
-

@@ -5,17 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/static/css/style.css">
-    <title>GoLang Quiz</title>
+    <title>GoLang Quiz </title>
 </head>
 <body>
     <h1>{{ .Title }}</h1>
     
     <ul>
-        {{ range .Todos }}
-            {{ if .Done }}
-                <li class="done">{{.Item}}</li>
+        {{ range .Quiz }}
+            {{ if .Answered }}
+                <li class="done">{{.Question}}</li>
             {{ else }}
-                <li>{{.Item}}</li>
+                <li>{{.Question}}</li>
             {{ end }}
         {{ end }}
     </ul>
