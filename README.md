@@ -6,10 +6,18 @@ GoLang Courses:
 [Free Code Camp](https://www.youtube.com/watch?v=jFfo23yIWac&t=19s)
 [Tech World with Nana](https://www.youtube.com/watch?v=yyUHQIec83I&t=279s)
 
+
+>> Developed at Google and made open source in 2009 
+>> 
 >> It's a multithread language 
+>> 
 >> Designed to run on multiple cores and built to support concurrency
+>> 
 >> Concurrency in Go is cheap and easy
 >> 
+>> for performant applications
+>> 
+>> Docker, Vault, Cockroach is written in Go 
 
 
 GoLang projects: Hello world starter 
