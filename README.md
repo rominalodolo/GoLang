@@ -6,6 +6,11 @@ GoLang Courses:
 [Free Code Camp](https://www.youtube.com/watch?v=jFfo23yIWac&t=19s)
 [Tech World with Nana](https://www.youtube.com/watch?v=yyUHQIec83I&t=279s)
 
+>> It's a multithread language 
+>> Designed to run on multiple cores and built to support concurrency
+>> Concurrency in Go is cheap and easy
+>> 
+
 
 GoLang projects: Hello world starter 
 
@@ -14,6 +19,8 @@ GoLang projects: Hello world starter
 ![hellowithgo](https://user-images.githubusercontent.com/83961643/188650720-72aad107-2726-47d5-ad9b-61e73d14dc2a.jpeg)
 
 ![gohelp](https://user-images.githubusercontent.com/83961643/188650736-feb1857f-7bbf-472f-bb02-507e0f184234.jpeg)
+
+
 
 
 ### Go Quiz App 
