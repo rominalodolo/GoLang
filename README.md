@@ -39,6 +39,7 @@ The problem:
 - Database - Just in-memory , so no database
 - REST API or gRPC
 - CLI that talks with the API, preferably using https://github.com/spf13/cobra ( as cli framework )
+- [cobra-cli Readme](https://github.com/spf13/cobra-cli/blob/main/README.md)
 
 User stories/Use cases
 * User should be presented questions with a number of answers
