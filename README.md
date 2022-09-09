@@ -7,17 +7,17 @@ GoLang Courses:
 [Tech World with Nana](https://www.youtube.com/watch?v=yyUHQIec83I&t=279s)
 
 
->> Developed at Google and made open source in 2009 
->> 
->> It's a multithread language 
->> 
->> Designed to run on multiple cores and built to support concurrency
->> 
->> Concurrency in Go is cheap and easy
->> 
->> for performant applications
->> 
->> Docker, Vault, Cockroach is written in Go 
+> Developed at Google and made open source in 2009 
+> 
+> It's a multithread language 
+> 
+> Designed to run on multiple cores and built to support concurrency
+> 
+> Concurrency in Go is cheap and easy
+> 
+> for performant applications
+> 
+> Docker, Vault, Cockroach is written in Go 
 
 
 GoLang projects: Hello world starter 
@@ -40,6 +40,11 @@ The problem:
 - REST API or gRPC
 - CLI that talks with the API, preferably using https://github.com/spf13/cobra ( as cli framework )
 - [cobra-cli Readme](https://github.com/spf13/cobra-cli/blob/main/README.md)
+
+Installing Cobra 
+
+![cobrainstall](https://user-images.githubusercontent.com/83961643/189361475-3538d69b-9c9b-4aee-8bd9-c32c602ec479.jpeg)
+
 
 User stories/Use cases
 * User should be presented questions with a number of answers
