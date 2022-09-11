@@ -1,17 +1,15 @@
 /*
 Copyright © 2022 NAME HERE <EMAIL ADDRESS>
-
 */
 package main
 
-// import "github.com/golang/goquizapp/cmd" 
+// import "github.com/golang/goquizapp/cmd"
 import (
+	"errors"
 	"fmt"
 	"html/template"
-	// "log"
-	"net/http"
-	"errors"
 	"io"
+	"net/http"
 	"os"
 )
 
@@ -26,13 +24,18 @@ func getHello(w http.ResponseWriter, r *http.Request) {
 	io.WriteString(w, "Hello, HTTP!\n")
 }
 
+type CsvLine struct {
+	Column1 string
+}
+
 func main() {
 	// cmd.Execute()
 
 	tmpl = template.Must(template.ParseFiles("templates/index.gohtml"))
 
-	fmt.Println("You scored higher than 60% of all quizzers")
+	filename := "quiz.csv"
 
+	fmt.Println("You scored higher than 60% of all quizzers")
 
 	http.HandleFunc("/", getRoot)
 	http.HandleFunc("/hello", getHello)
