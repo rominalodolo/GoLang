@@ -54,7 +54,7 @@ Testing the application and running "Hello World!"
 ![helloworldtest](https://user-images.githubusercontent.com/83961643/189537623-ea3a95b3-06f7-47b1-ba0d-a9329a9eba1a.jpeg)
 
 
-[fmt package]([https://pkg.go.dev/io](https://pkg.go.dev/fmt@go1.19.1#hdr-Printing))
+[fmt package]([https://pkg.go.dev/io](https://pkg.go.dev/fmt@go1.19.1#hdr-Printing)
 **Package fmt** implements formatted I/O with functions analogous to C's printf and scanf. The format 'verbs' are derived from C's but are simpler.
 
 [io package](https://pkg.go.dev/io)
