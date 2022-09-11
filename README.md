@@ -43,11 +43,15 @@ The problem:
 
 Installing Cobra 
 
+![cobra-cli](https://user-images.githubusercontent.com/83961643/189537596-b82cd6e1-dbe5-4425-ac40-e131b34c8c73.jpeg)
 ![cobrainstall](https://user-images.githubusercontent.com/83961643/189361475-3538d69b-9c9b-4aee-8bd9-c32c602ec479.jpeg)
 
-
-
 Facing issues with init but go it to work and get the Go project to initialise and run
+![running](https://user-images.githubusercontent.com/83961643/189537612-7e245eba-8e56-43b9-be24-6db05023c1a0.jpeg)
+
+
+Testing the application and running "Hello World!" 
+![helloworldtest](https://user-images.githubusercontent.com/83961643/189537623-ea3a95b3-06f7-47b1-ba0d-a9329a9eba1a.jpeg)
 
 
 
