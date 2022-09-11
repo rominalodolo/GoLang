@@ -33,7 +33,7 @@ func main() {
 
 	tmpl = template.Must(template.ParseFiles("templates/index.gohtml"))
 
-	filename := "quiz.csv"
+	// filename := "quiz.csv"
 
 	fmt.Println("You scored higher than 60% of all quizzers")
 
