@@ -76,7 +76,9 @@ _User stories/Use cases_
 > 
 > When the quiz is completed the user will see their results with the answer. 
 >
-> on the next screen the user will see the printed ""You scored higher than 60% of all quizzers"
+> on the next screen the user will see the printed "You scored higher than 60% of all quizzers" 
+> 
+> The user will be asked if they would like to retry the quiz or if they would like to exit. 
 
 
 Last Edit: September 2022
