@@ -54,6 +54,31 @@ Testing the application and running "Hello World!"
 ![helloworldtest](https://user-images.githubusercontent.com/83961643/189537623-ea3a95b3-06f7-47b1-ba0d-a9329a9eba1a.jpeg)
 
 
+[fmt package]([https://pkg.go.dev/io](https://pkg.go.dev/fmt@go1.19.1#hdr-Printing))
+**Package fmt** implements formatted I/O with functions analogous to C's printf and scanf. The format 'verbs' are derived from C's but are simpler.
+
+[io package](https://pkg.go.dev/io)
+**Package io** provides basic interfaces to I/O primitives. Its primary job is to wrap existing implementations of such primitives, such as those in package os, into shared public interfaces that abstract the functionality, plus some other related primitives.
+
+Because these interfaces and primitives wrap lower-level operations with various implementations, unless otherwise informed clients should not assume they are safe for parallel execution.
+
+
+
+Being able to print in the terminal 
+
+![print](https://user-images.githubusercontent.com/83961643/189546280-eb36542f-3ca2-408c-99f1-0561e694f203.jpeg)
+
+
+[Create HTTP Server](https://www.digitalocean.com/community/tutorials/how-to-make-an-http-server-in-go) | http://localhost:3333
+
+![http](https://user-images.githubusercontent.com/83961643/189546279-f876921a-bdf6-4ae2-9058-9e98006a4ba1.jpeg)
+
+
+Decoding a csv file in [go](https://pkg.go.dev/encoding/csv)
+
+
+
+
 **The Problem**
 
 _User stories/Use cases_
@@ -79,6 +104,7 @@ _User stories/Use cases_
 > on the next screen the user will see the printed "You scored higher than 60% of all quizzers" 
 > 
 > The user will be asked if they would like to retry the quiz or if they would like to exit. 
+
 
 
 Last Edit: September 2022
