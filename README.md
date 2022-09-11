@@ -55,7 +55,8 @@ Testing the application and running "Hello World!"
 
 
 **The Problem**
-_User stories/Use cases
+
+_User stories/Use cases_
 
 * _User should be presented questions with a number of answers_
 
@@ -64,6 +65,7 @@ _User stories/Use cases
 * _User should be able to answer all the questions and then post his/her answers and get back how many correct answers there had and be displayed to the user._
 
 * _User should see how good he/she rated compared to others that have taken the quiz, "You scored higher than 60% of all quizzers"_
+
 
 
 > I created a multiple choice quiz that had a true or false questions and a choice between A->D 
