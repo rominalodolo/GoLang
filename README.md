@@ -44,17 +44,20 @@ The problem:
 Installing Cobra 
 
 ![cobrainstall](https://user-images.githubusercontent.com/83961643/189361475-3538d69b-9c9b-4aee-8bd9-c32c602ec479.jpeg)
+![Uploading cobra-cli.jpeg…]()
 
 
-Facing issues with init
+Facing issues with init but go it to work and get the Go project to initialise and run
+![Uploading running.jpeg…]()
+
 
 User stories/Use cases
-* User should be presented questions with a number of answers
+* User should be presented questions with a number of answers 
 * User should be able to select just one answer per question
 * User should be able to answer all the questions and then post his/her answers and get back how many correct answers there had and be displayed to the user.
 * User should see how good he/she rated compared to others that have taken the quiz, "You scored higher than 60% of all quizzers" 
 
-
+I created a multiple choice quiz that had a true or false questions and a choice between A->D 
 
 
 Last Edit: September 2022
