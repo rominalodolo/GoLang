@@ -44,11 +44,11 @@ The problem:
 Installing Cobra 
 
 ![cobrainstall](https://user-images.githubusercontent.com/83961643/189361475-3538d69b-9c9b-4aee-8bd9-c32c602ec479.jpeg)
-![Uploading cobra-cli.jpeg…]()
+
 
 
 Facing issues with init but go it to work and get the Go project to initialise and run
-![Uploading running.jpeg…]()
+
 
 
 User stories/Use cases
