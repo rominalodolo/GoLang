@@ -45,6 +45,7 @@ Installing Cobra
 
 ![cobrainstall](https://user-images.githubusercontent.com/83961643/189361475-3538d69b-9c9b-4aee-8bd9-c32c602ec479.jpeg)
 
+Facing issues with init
 
 User stories/Use cases
 * User should be presented questions with a number of answers
