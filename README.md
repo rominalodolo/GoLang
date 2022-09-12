@@ -3,8 +3,10 @@
 Go handbook [Download PDF](https://thevalleyofcode.pages.dev/go-handbook.pdf)
 
 GoLang Courses: 
-[Free Code Camp](https://www.youtube.com/watch?v=jFfo23yIWac&t=19s)
-[Tech World with Nana](https://www.youtube.com/watch?v=yyUHQIec83I&t=279s)
+- [Free Code Camp](https://www.youtube.com/watch?v=jFfo23yIWac&t=19s)
+- [Tech World with Nana](https://www.youtube.com/watch?v=yyUHQIec83I&t=279s)
+- [Golang Quiz App...](https://www.youtube.com/watch?v=TVHGxz6tn2M&t=960s)
+- [GoLang Simple TODO App using HTML Templates](https://www.youtube.com/watch?v=UeUDGEa0AX4)
 
 
 > Developed at Google and made open source in 2009 
