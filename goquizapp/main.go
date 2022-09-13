@@ -11,6 +11,7 @@ import (
 	"io"
 	"net/http"
 	"os"
+	"encoding/csv"
 )
 
 var tmpl *template.Template
@@ -24,8 +25,12 @@ func getHello(w http.ResponseWriter, r *http.Request) {
 	io.WriteString(w, "Hello, HTTP!\n")
 }
 
-type CsvLine struct {
-	Column1 string
+type quizData struct {
+    Question string
+    Correct string
+    Answer2 string
+	Answer3 string
+	Answer4 string
 }
 
 func main() {
@@ -33,7 +38,7 @@ func main() {
 
 	tmpl = template.Must(template.ParseFiles("templates/index.gohtml"))
 
-	// filename := "quiz.csv"
+	// quizData := "quiz.csv"
 
 	fmt.Println("You scored higher than 60% of all quizzers")
 
@@ -47,5 +52,26 @@ func main() {
 		fmt.Printf("error starting server: %s\n", err)
 		os.Exit(1)
 	}
+
+
+	csvFile, err := os.Open("quiz.csv")
+	if err != nil {
+		fmt.Println(err)
+	}
+	fmt.Println("Successfully Opened CSV file")
+	defer csvFile.Close()
+    
+    csvLines, err := csv.NewReader(csvFile).ReadAll()
+    if err != nil {
+        fmt.Println(err)
+    }    
+    for _, line := range csvLines {
+        quiz :=  quizData{
+            Question: line[0],
+            Age: line[1],
+			City: line[2],
+        }
+        fmt.Println(emp.Name + " " + emp.Age + " " + emp.City)
+    }
 
 }

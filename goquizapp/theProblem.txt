@@ -16,3 +16,6 @@ User should be presented questions with a number of answers
 User should be able to select just one answer per question
 User should be able to answer all the questions and then post his/her answers and get back how many correct answers there had and be displayed to the user.
 User should see how good he/she rated compared to others that have taken the quiz, "You scored higher than 60% of all quizzers" 
+
+csv file layout:
+question, correct, answer2, answer3, answer4
