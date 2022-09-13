@@ -110,7 +110,10 @@ Trying to run the csv file but there's errors in how I put together the csv stru
 
 [4 basic range loop (for-each) patterns](https://yourbasic.org/golang/for-loop-range-array-slice-map-channel/)
 
+## Scanner in Go 
 
+[Take Input from the User in Golang](https://www.geeksforgeeks.org/how-to-take-input-from-the-user-in-golang/)  
+[Scan function in Golang](https://www.educative.io/answers/what-is-the-scan-function-in-golang)
 
 **The Problem**
 
