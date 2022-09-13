@@ -3,6 +3,7 @@ Copyright © 2022 NAME HERE <EMAIL ADDRESS>
 */
 package main
 
+// import "github.com/golang/goquizapp/cmd"
 import (
 	// "errors"
 	"fmt"
@@ -13,7 +14,16 @@ import (
 	"encoding/csv"
 )
 
+// var tmpl *template.Template
 
+// func getRoot(w http.ResponseWriter, r *http.Request) {
+// 	fmt.Printf("got / request\n")
+// 	io.WriteString(w, "Welcome to the South African Whales and Dolphin Quiz!\n")
+// }
+// func getHello(w http.ResponseWriter, r *http.Request) {
+// 	fmt.Printf("got /hello request\n")
+// 	io.WriteString(w, "Hello, HTTP!\n")
+// }
 
 type quizData struct {
     Question string
@@ -24,13 +34,29 @@ type quizData struct {
 }
 
 func main() {
+	// cmd.Execute()
 
-	csvFile, err := os.Open("quiz.csv")
-	if err != nil {
-		fmt.Println(err)
-	}
-	fmt.Println("Welcome to the Whales and Dolphin Quiz (South Africa EDITION) \n ")
-	defer csvFile.Close()
+	// tmpl = template.Must(template.ParseFiles("templates/index.gohtml"))
+
+	fmt.Println("Welcome to the Whales and Dolphin Quiz (South Africa EDITION)")
+
+	// http.HandleFunc("/", getRoot)
+	// http.HandleFunc("/hello", getHello)
+
+	// err := http.ListenAndServe(":3333", nil)
+	// if errors.Is(err, http.ErrServerClosed) {
+	// 	fmt.Printf("server closed\n")
+	// } else if err != nil {
+	// 	fmt.Printf("error starting server: %s\n", err)
+	// 	os.Exit(1)
+	// }
+
+	// csvFile, err := os.Open("quiz.csv")
+	// if err != nil {
+	// 	fmt.Println(err)
+	// }
+	// fmt.Println("Successfully Opened CSV file")
+	// defer csvFile.Close()
     
     csvLines, err := csv.NewReader(csvFile).ReadAll()
     if err != nil {
@@ -44,7 +70,7 @@ func main() {
 			Answer3: line[3],
 			Answer4: line[4],
         }
-        fmt.Println("\n" + quiz.Question + ": \n" + quiz.Correct + " \n" + quiz.Answer2 + " \n" + quiz.Answer3 + " \n" + quiz.Answer4 + " \n") 
+        fmt.Println(quiz.Question + " " + quiz.Correct + " " + quiz.Answer2 + " " + quiz.Answer3 + " " + quiz.Answer4) 
     }
 
 	// Println function is used to
