@@ -91,6 +91,8 @@ Being able to print in the terminal
 
 Decoding a csv file in [go](https://pkg.go.dev/encoding/csv)
 
+Trying to run the csv file but there's errors in how I put together the csv structure and questions. 
+![runningthecsvfile](https://user-images.githubusercontent.com/83961643/189903221-7515d9b0-0d5e-4a82-b2c7-1205a4019da4.jpeg)
 
 
 
