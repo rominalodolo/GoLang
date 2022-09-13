@@ -98,17 +98,17 @@ _User stories/Use cases_
 
 
 
-> I created a multiple choice quiz that had a true or false questions and a choice between A->D 
+> I created a multiple choice quiz that has options between A->D (4 choices to choose from)
 > 
 > Only one right answer per question.
 > 
-> There are 10 quesions the program loops through but the user only sees 5 questions at a time.
+> There are 6 quesions the program loops through but the user only sees 3 questions at a time.
 > 
 > When the quiz is completed the user will see their results with the answer. 
 >
-> on the next screen the user will see the printed "You scored higher than 60% of all quizzers" 
+> And if the user has scored higher than 60%, the user will see the printed "You scored higher than 60% of all quizzers" 
 > 
-> The user will be asked if they would like to retry the quiz or if they would like to exit. 
+> The user will be asked if they would like to retry the quiz or if they would like to exit the application.
 
 
 
