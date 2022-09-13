@@ -23,6 +23,7 @@ type quizData struct {
 	Answer4 string
 }
 
+
 func main() {
 
 	csvFile, err := os.Open("quiz.csv")
@@ -36,21 +37,25 @@ func main() {
     if err != nil {
         fmt.Println(err)
     }    
+
+
     for _, line := range csvLines {
-        quiz :=  quizData{
-            Question: line[0],
-            Correct: line[1],
-			Answer2: line[2],
-			Answer3: line[3],
-			Answer4: line[4],
-        }
-        fmt.Println("\n" + quiz.Question + ": \n" + quiz.Correct + " \n" + quiz.Answer2 + " \n" + quiz.Answer3 + " \n" + quiz.Answer4 + " \n") 
+		if 
+			quiz :=  quizData{
+				Question: line[0],
+				Correct: line[1],
+				Answer2: line[2],
+				Answer3: line[3],
+				Answer4: line[4],
+			}
+
+
+        fmt.Println("\n" + quiz.Question + ": \n" + quiz.Correct + " \n" + quiz.Answer2 + " \n" + quiz.Answer3 + " \n" + quiz.Answer4 + " \n")
+		
+
+		
     }
 
-	// Println function is used to
-    // display output in the next line
-    fmt.Println("Enter Your First Name: ")
-  
     // var then variable name then variable type
     var first string
   
@@ -67,7 +72,7 @@ func main() {
     // Addition of two string
     fmt.Print(first + " " + second)
 
-	fmt.Println("You scored higher than 60% of all quizzers")
+	fmt.Println("\nYou scored higher than 60% of all quizzers")
 
 }
 
