@@ -79,6 +79,16 @@ Being able to print in the terminal
 ![http](https://user-images.githubusercontent.com/83961643/189546279-f876921a-bdf6-4ae2-9058-9e98006a4ba1.jpeg)
 
 
+
+[template package](https://pkg.go.dev/html/template)
+
+**Package template** (html/template) implements data-driven templates for generating HTML output safe against code injection. It provides the same interface as package text/template and should be used instead of text/template whenever the output is HTML.
+
+![controlstruc](https://user-images.githubusercontent.com/83961643/189873380-cf0a995e-76e9-4df1-a478-ee374d91c4ab.jpeg)
+[reference: Go Web Examples](https://gowebexamples.com/templates/)
+
+
+
 Decoding a csv file in [go](https://pkg.go.dev/encoding/csv)
 
 
