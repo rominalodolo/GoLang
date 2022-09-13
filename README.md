@@ -99,10 +99,12 @@ Trying to run the csv file but there's errors in how I put together the csv stru
 
 [How to write a csv file](https://www.admfactory.com/how-to-write-csv-file-in-golang/)
 
+[Common Format and MIME Type for Comma-Separated Values (CSV) Files](https://www.rfc-editor.org/rfc/rfc4180.html)
 
-Running through the csv file: (Working csv values)
+## Running through the csv file: (Working csv values)
 
 ![readingcsv](https://user-images.githubusercontent.com/83961643/189907659-4f6e28ac-c2ef-440d-b85b-c3c2b197cf35.jpeg)
+
 
 
 **The Problem**
@@ -130,6 +132,10 @@ _User stories/Use cases_
 > And if the user has scored higher than 60%, the user will see the printed "You scored higher than 60% of all quizzers" 
 > 
 > The user will be asked if they would like to retry the quiz or if they would like to exit the application.
+
+
+## The working app: 
+
 
 
 
