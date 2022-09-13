@@ -106,6 +106,11 @@ Trying to run the csv file but there's errors in how I put together the csv stru
 ![readingcsv](https://user-images.githubusercontent.com/83961643/189907659-4f6e28ac-c2ef-440d-b85b-c3c2b197cf35.jpeg)
 
 
+## Looping through the 3 questons & creating a map with keys:
+
+[4 basic range loop (for-each) patterns](https://yourbasic.org/golang/for-loop-range-array-slice-map-channel/)
+
+
 
 **The Problem**
 
