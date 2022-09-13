@@ -96,6 +96,11 @@ Trying to run the csv file but there's errors in how I put together the csv stru
 [code reference](https://webdamn.com/how-to-read-csv-file-using-golang/)
 
 
+Running through the csv file: (Working csv values)
+
+![readingcsv](https://user-images.githubusercontent.com/83961643/189907659-4f6e28ac-c2ef-440d-b85b-c3c2b197cf35.jpeg)
+
+
 **The Problem**
 
 _User stories/Use cases_
