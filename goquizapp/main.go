@@ -5,25 +5,25 @@ package main
 
 // import "github.com/golang/goquizapp/cmd"
 import (
-	"errors"
+	// "errors"
 	"fmt"
-	"html/template"
-	"io"
-	"net/http"
+	// "html/template"
+	// "io"
+	// "net/http"
 	"os"
 	"encoding/csv"
 )
 
-var tmpl *template.Template
+// var tmpl *template.Template
 
-func getRoot(w http.ResponseWriter, r *http.Request) {
-	fmt.Printf("got / request\n")
-	io.WriteString(w, "Welcome to the South African Whales and Dolphin Quiz!\n")
-}
-func getHello(w http.ResponseWriter, r *http.Request) {
-	fmt.Printf("got /hello request\n")
-	io.WriteString(w, "Hello, HTTP!\n")
-}
+// func getRoot(w http.ResponseWriter, r *http.Request) {
+// 	fmt.Printf("got / request\n")
+// 	io.WriteString(w, "Welcome to the South African Whales and Dolphin Quiz!\n")
+// }
+// func getHello(w http.ResponseWriter, r *http.Request) {
+// 	fmt.Printf("got /hello request\n")
+// 	io.WriteString(w, "Hello, HTTP!\n")
+// }
 
 type quizData struct {
     Question string
@@ -36,23 +36,20 @@ type quizData struct {
 func main() {
 	// cmd.Execute()
 
-	tmpl = template.Must(template.ParseFiles("templates/index.gohtml"))
-
-	// quizData := "quiz.csv"
+	// tmpl = template.Must(template.ParseFiles("templates/index.gohtml"))
 
 	fmt.Println("You scored higher than 60% of all quizzers")
 
-	http.HandleFunc("/", getRoot)
-	http.HandleFunc("/hello", getHello)
+	// http.HandleFunc("/", getRoot)
+	// http.HandleFunc("/hello", getHello)
 
-	err := http.ListenAndServe(":3333", nil)
-	if errors.Is(err, http.ErrServerClosed) {
-		fmt.Printf("server closed\n")
-	} else if err != nil {
-		fmt.Printf("error starting server: %s\n", err)
-		os.Exit(1)
-	}
-
+	// err := http.ListenAndServe(":3333", nil)
+	// if errors.Is(err, http.ErrServerClosed) {
+	// 	fmt.Printf("server closed\n")
+	// } else if err != nil {
+	// 	fmt.Printf("error starting server: %s\n", err)
+	// 	os.Exit(1)
+	// }
 
 	csvFile, err := os.Open("quiz.csv")
 	if err != nil {
@@ -68,10 +65,12 @@ func main() {
     for _, line := range csvLines {
         quiz :=  quizData{
             Question: line[0],
-            Age: line[1],
-			City: line[2],
+            Correct: line[1],
+			Answer2: line[2],
+			Answer3: line[3],
+			Answer4: line[4],
         }
-        fmt.Println(emp.Name + " " + emp.Age + " " + emp.City)
+        fmt.Println(quiz.Question + " " + quiz.Correct + " " + quiz.Answer2 + " " + quiz.Answer3 + " " + quiz.Answer4) 
     }
 
 }
