@@ -23,15 +23,6 @@ type quizSpecs struct {
 	Answer4 string
 }
 
-type quizData struct {
-	Q1 string
-	Q2 string
-	Q3 string
-	Q4 string
-	Q5 string
-	Q6 string
-}
-
 
 func main() {
 
@@ -60,27 +51,8 @@ func main() {
 	fmt.Println("\n" + quizS.Question + ": \n" + quizS.Correct + " \n" + quizS.Answer2 + " \n" + quizS.Answer3 + " \n" + quizS.Answer4 + " \n")
 
 	}
-		csvColumns, err := csv.NewReader(csvFile).ReadAll()
-		if err != nil {
-			fmt.Println(err)
-		}  
 
-		// run through the columns of the csv file till 
-	for _, column := range csvColumns {
-		quizD := quizData {
-			Q1: column[0],
-			Q2: column[1],
-			Q3: column[2],
-			Q4: column[3],
-			Q5: column[4],
-			Q6: column[5],
-		}
-		
-
-		fmt.Println(quizD.Q1)
-		
-		
-    }
+    
 
     // var then variable name then variable type
     var first string
