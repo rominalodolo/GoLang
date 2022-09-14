@@ -15,12 +15,21 @@ import (
 
 
 
-type quizData struct {
+type quizSpecs struct {
     Question string
     Correct string
     Answer2 string
 	Answer3 string
 	Answer4 string
+}
+
+type quizData struct {
+	Q1 string
+	Q2 string
+	Q3 string
+	Q4 string
+	Q5 string
+	Q6 string
 }
 
 
@@ -39,20 +48,37 @@ func main() {
     }    
 
 
+		// create the variables 
     for _, line := range csvLines {
-		if 
-			quiz :=  quizData{
-				Question: line[0],
-				Correct: line[1],
-				Answer2: line[2],
-				Answer3: line[3],
-				Answer4: line[4],
-			}
+        quizS :=  quizSpecs {
+            Question: line[0],
+            Correct: line[1],
+			Answer2: line[2],
+			Answer3: line[3],
+			Answer4: line[4],
+        }
+	fmt.Println("\n" + quizS.Question + ": \n" + quizS.Correct + " \n" + quizS.Answer2 + " \n" + quizS.Answer3 + " \n" + quizS.Answer4 + " \n")
 
+	}
+		csvColumns, err := csv.NewReader(csvFile).ReadAll()
+		if err != nil {
+			fmt.Println(err)
+		}  
 
-        fmt.Println("\n" + quiz.Question + ": \n" + quiz.Correct + " \n" + quiz.Answer2 + " \n" + quiz.Answer3 + " \n" + quiz.Answer4 + " \n")
+		// run through the columns of the csv file till 
+	for _, column := range csvColumns {
+		quizD := quizData {
+			Q1: column[0],
+			Q2: column[1],
+			Q3: column[2],
+			Q4: column[3],
+			Q5: column[4],
+			Q6: column[5],
+		}
 		
 
+		fmt.Println(quizD.Q1)
+		
 		
     }
 
@@ -75,5 +101,3 @@ func main() {
 	fmt.Println("\nYou scored higher than 60% of all quizzers")
 
 }
-
-
