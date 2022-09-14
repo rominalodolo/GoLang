@@ -141,6 +141,23 @@ _User stories/Use cases_
 > 
 > The user will be asked if they would like to retry the quiz or if they would like to exit the application.
 
+Installing more packages 
+![init](https://user-images.githubusercontent.com/83961643/190234150-ebf6f1b8-0e01-4084-ba9d-35d884a2f3d2.jpeg)
+
+![installpip](https://user-images.githubusercontent.com/83961643/190234165-d984c0e2-f491-4c77-8a0e-dd78e3941bb2.jpeg)
+
+
+[Gorilla](https://www.gorillatoolkit.org)
+
+[Viper](https://viper-framework.readthedocs.io/en/latest/installation/index.html)
+
+[Vault](https://learn.hashicorp.com/tutorials/vault/getting-started-install)
+
+[inconshreveable](https://installati.one/ubuntu/22.04/golang-github-inconshreveable-log15-dev/)
+
+[apt-get](https://unix.stackexchange.com/questions/80711/how-to-install-apt-get-or-yum-on-mac-os-x)
+
+[Ubuntu](https://ubuntu.com/server/docs/package-management)
 
 ## The working app: 
 
