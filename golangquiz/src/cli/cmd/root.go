@@ -1,24 +1,20 @@
 /*
 Copyright © 2022 NAME HERE <EMAIL ADDRESS>
-
 */
 package cmd
 
 import (
-	"os"
 	"errors"
 	"fmt"
 	"io"
 	"net/http"
+	"os"
 	"strconv"
 
 	homedir "github.com/mitchellh/go-homedir"
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"
-	
 )
-
-
 
 // // rootCmd represents the base command when called without any subcommands
 // var rootCmd = &cobra.Command{
@@ -55,7 +51,6 @@ import (
 // 	// when this action is called directly.
 // 	rootCmd.Flags().BoolP("toggle", "t", false, "Help message for toggle")
 // }
-
 
 var cfgFile string
 

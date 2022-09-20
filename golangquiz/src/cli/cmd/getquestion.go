@@ -2,9 +2,10 @@ package cmd
 
 import (
 	"fmt"
-	"github.com/spf13/cobra"
 	"io/ioutil"
 	"os"
+
+	"github.com/spf13/cobra"
 )
 
 // getquestionCmd represents the getquestion command
